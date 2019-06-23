@@ -4,7 +4,7 @@ from node import Node
 
 class Knapsacker:
   def __init__(self, items, capacity):
-    self.items = sorted(items, key=lambda item: item.value / item.cost, reverse=True)
+    self.items = sorted(items, key=lambda item: float(item.value) / item.cost, reverse=True)
     self.capacity = capacity
     self.candidates = SortedSet(key=lambda node: -(node.upper_bound * 2 ** 16 + node.item_index))
 
