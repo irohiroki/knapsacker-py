@@ -1,4 +1,4 @@
-# from functools import reduce # Python 3
+from functools import reduce # Python 3
 from sortedcontainers import SortedSet
 from node import Node
 
